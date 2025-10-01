@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Club CLI Design System - Primary: #277D7C (Petrol), Secondary: #F08C41 (Warm Orange) */
+
+@layer base {
+  :root {
+    /* Apple/Silicon Valley Design System - Ultra Clean */
+    
+    /* Primary - Deep Charcoal (Apple-style near black) */
+    --primary: 220 13% 9%; /* #1d1d1f - Apple's signature dark */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Vibrant Blue (Apple Blue) */
+    --secondary: 211 100% 50%; /* #0071e3 - Apple Blue */
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Background - Pure & Soft */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 220 13% 9%; /* Near black text */
+    
+    /* Muted - Ultra Light Gray */
+    --muted: 210 20% 98%; /* #f5f5f7 - Apple's light background */
+    --muted-foreground: 220 9% 46%; /* #6e6e73 - Apple's secondary text */
+    
+    /* Card - Clean White with subtle shadow */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 9%;
+    
+    /* Accent - Soft Blue-Gray */
+    --accent: 210 20% 98%;
+    --accent-foreground: 220 13% 9%;
+    
+    /* System Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%; /* #e5e5e7 */
+    --input: 220 13% 91%;
+    --ring: 211 100% 50%;
+    --radius: 0.75rem; /* Apple's standard radius */
+
+    /* Apple-inspired Gradients - Subtle & Elegant */
+    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%), hsl(0 0% 100%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    
+    /* Apple Shadows - Soft & Natural */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-lift: 0 12px 32px rgba(0, 0, 0, 0.08);
+    --shadow-hero: 0 20px 40px rgba(0, 0, 0, 0.1);
+    
+    /* Apple Transitions - Buttery Smooth */
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+    font-size: 17px; /* Apple's base size */
+    line-height: 1.47059; /* Apple's line height */
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.022em; /* Apple's letter spacing */
+  }
+
+  /* Typography Hierarchy - Apple Style */
+  h1 {
+    @apply font-semibold text-foreground;
+    font-size: clamp(2.5rem, 5vw, 4.5rem); /* 40-72px - Apple's hero sizes */
+    line-height: 1.05; /* Tight, impactful */
+    letter-spacing: -0.015em; /* Tighter for large text */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    @apply font-semibold text-foreground;
+    font-size: clamp(1.75rem, 4vw, 3rem); /* 28-48px */
+    line-height: 1.08349;
+    letter-spacing: -0.003em;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    @apply font-semibold text-foreground;
+    font-size: clamp(1.5rem, 3vw, 2rem); /* 24-32px */
+    line-height: 1.125;
+    letter-spacing: 0.007em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    @apply font-medium text-foreground;
+    font-size: clamp(1.25rem, 2vw, 1.5rem); /* 20-24px */
+    line-height: 1.16667;
+    letter-spacing: 0.009em;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    @apply text-foreground;
+    font-size: clamp(1.0625rem, 1.5vw, 1.1875rem); /* 17-19px */
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  /* Hero Typography - Apple Style */
+  .hero-title {
+    @apply font-semibold text-foreground;
+    font-size: clamp(3rem, 6vw, 5rem); /* 48-80px - Apple's impact */
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+  }
+
+  .hero-subtitle {
+    @apply font-normal text-muted-foreground;
+    font-size: clamp(1.3125rem, 2.5vw, 1.75rem); /* 21-28px */
+    line-height: 1.38105;
+    letter-spacing: -0.021em;
+    font-weight: 400;
+  }
+
+  /* Layout Containers - Apple's Max Width */
+  .content-container {
+    max-width: 1280px; /* Apple uses ~1280px */
+    margin: 0;
+    padding: 0 1.5rem; /* 24px mobile */
+  }
+
+  @media (min-width: 768px) {
+    .content-container {
+      padding: 0 3rem; /* 48px tablet */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-container {
+      padding: 0 4rem; /* 64px desktop */
+    }
+  }
+
+  /* Section Spacing - Apple's Generous Breathing Room */
+  .section-spacing {
+    padding: 3rem 0; /* 48px mobile */
+  }
+
+  @media (min-width: 768px) {
+    .section-spacing {
+      padding: 5rem 0; /* 80px tablet */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-spacing {
+      padding: 6.5rem 0; /* 104px desktop - Apple uses generous space */
+    }
+  }
+
+  /* Section Title Spacing - Reduced gap between title and content */
+  .section-title-spacing {
+    margin-bottom: 1.25rem; /* 20px */
+  }
+
+  @media (min-width: 768px) {
+    .section-title-spacing {
+      margin-bottom: 1.5rem; /* 24px */
+    }
+  }
+
+  /* Module Spacing - Consistent gap between sections */
+  .module-spacing {
+    margin-bottom: 4rem; /* 64px max gap between modules */
+  }
+
+  /* Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  /* Interactive Elements - Subtle Apple-style */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-1px); /* More subtle */
+    box-shadow: var(--shadow-lift);
+  }
+
+  .hover-scale {
+    transition: var(--transition-fast);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02); /* Very subtle */
+  }
+
+  /* Hero Background - Clean Apple Style */
+  .hero-section {
+    background: var(--gradient-hero);
+  }
+
+  /* Focus States - Accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
