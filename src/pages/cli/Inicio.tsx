@@ -61,7 +61,7 @@ const Inicio = () => {
       {/* Intro Section */}
       <section className="py-20 bg-background">
         <div className="content-container">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl">
             <p className="text-xl leading-relaxed text-muted-foreground mb-8">
               Imagine un equipo donde cada persona encuentra <span className="text-primary font-semibold">propósito en su trabajo</span>, 
               donde el crecimiento individual impulsa el éxito colectivo y donde los desafíos del cambio se transforman en oportunidades.
