@@ -6,6 +6,7 @@ import BlogCard from '@/components/blog/BlogCard';
 import { blogPosts } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
+import heroImage from '@/assets/hero-cli-blog.jpg';
 
 const Blog = () => {
   const [showAll, setShowAll] = useState(false);
@@ -17,7 +18,7 @@ const Blog = () => {
         title="Blog" 
         subtitle="Expertentipps, persönliche Einblicke und praktische Ratschläge für eine erfolgreiche Integration und interkulturelles Verständnis." 
         showCta={false} 
-        backgroundImage="/lovable-uploads/faq-consultation.jpg"
+        backgroundImage={heroImage}
       />
 
       {/* Blog Grid Section */}

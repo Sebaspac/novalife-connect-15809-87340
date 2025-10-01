@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, MapPin, Mail } from 'lucide-react';
+import heroImage from '@/assets/hero-cli-nosotros.jpg';
 
 // Team member images
 import teamMonica from '@/assets/team-monica.jpg';
@@ -129,7 +130,7 @@ const Nosotros = () => {
       <CLIHero 
         title="Sobre Nosotros" 
         subtitle="Somos catalizadores de cambio" 
-        backgroundImage="/lovable-uploads/testimonial-customer.jpg"
+        backgroundImage={heroImage}
         showCta={false}
       />
 

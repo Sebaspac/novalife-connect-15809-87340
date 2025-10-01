@@ -3,6 +3,7 @@ import CLIServiceCard from '@/components/cli/CLIServiceCard';
 import CLICTABand from '@/components/cli/CLICTABand';
 import ContactSideBySide from '@/components/common/ContactSideBySide';
 import { Users, Presentation, Target, TrendingUp, BookOpen } from 'lucide-react';
+import heroImage from '@/assets/hero-cli-servicios.jpg';
 
 const Servicios = () => {
   const serviciosProfesionales = [
@@ -115,7 +116,7 @@ const Servicios = () => {
         subtitle="Mentorías, conferencias, coaching y consultoría diseñados para impulsar el crecimiento profesional y empresarial"
         ctaText="Solicitar información"
         ctaLink="/contacto"
-        backgroundImage="/lovable-uploads/services-family-therapy.jpg"
+        backgroundImage={heroImage}
       />
 
       {/* Intro */}

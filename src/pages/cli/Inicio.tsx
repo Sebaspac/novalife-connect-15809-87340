@@ -10,6 +10,7 @@ import RepresentationsSection from '@/components/cli/RepresentationsSection';
 import TestimonialsSection from '@/components/common/TestimonialsSection';
 import ContactSideBySide from '@/components/common/ContactSideBySide';
 import { Users, Presentation, Target, TrendingUp, Lightbulb, Heart, Zap, Star } from 'lucide-react';
+import heroImage from '@/assets/hero-cli-inicio.jpg';
 const Inicio = () => {
   const services = [{
     icon: <Users className="h-12 w-12" />,
@@ -55,7 +56,7 @@ const Inicio = () => {
   }];
   return <div>
       {/* Hero Section */}
-      <CLIHero title="Coaching, consultoría y capacitación para la transformación y el crecimiento profesional y empresarial" subtitle="Somos el puente entre la transformación del talento humano y el crecimiento empresarial." ctaText="Reserva una sesión" ctaLink="/contacto" secondaryCtaText="Explorar servicios" secondaryCtaLink="/servicios" backgroundImage="/lovable-uploads/families-arriving.jpg" />
+      <CLIHero title="Coaching, consultoría y capacitación para la transformación y el crecimiento profesional y empresarial" subtitle="Somos el puente entre la transformación del talento humano y el crecimiento empresarial." ctaText="Reserva una sesión" ctaLink="/contacto" secondaryCtaText="Explorar servicios" secondaryCtaLink="/servicios" backgroundImage={heroImage} />
 
       {/* Intro Section */}
       <section className="py-20 bg-background">
