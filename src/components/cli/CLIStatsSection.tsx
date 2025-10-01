@@ -27,7 +27,7 @@ const CLIStatsSection = () => {
   return (
     <section className="py-20 bg-gradient-subtle">
       <div className="content-container">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Empoderamos para transformar, inspiramos para crecer
           </h2>
