@@ -33,7 +33,7 @@ const CLICTABand = ({
   return (
     <section className={`${variants[variant]} py-16`}>
       <div className="content-container">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 max-w-7xl mx-auto">
           <div className="flex-1">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
             {description && (

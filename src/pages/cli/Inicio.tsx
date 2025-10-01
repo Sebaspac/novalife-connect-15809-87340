@@ -87,7 +87,7 @@ const Inicio = () => {
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {needs.map((need, index) => <div key={index} className="flex items-start space-x-4 p-6 rounded-xl border border-border/50 bg-card hover:shadow-card transition-all animate-fade-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
@@ -118,7 +118,7 @@ const Inicio = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => <div key={index} className="animate-fade-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
