@@ -27,19 +27,19 @@ const ClientsLogosSection = () => {
   return <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="content-container">
         {/* Minimal Header */}
-        <div className="text-center mb-16 space-y-3 animate-fade-in">
+        <div className="mb-16 space-y-3 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10 mb-4">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">Confianza y Colaboración</span>
           </div>
           
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl">
             Organizaciones que confían en nosotros para su transformación
           </p>
         </div>
 
         {/* Elegant Grid */}
-        <div className="relative">
+        <div className="relative max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {clientGroups[currentSlide].map((client, index) => <div key={index} className="group relative flex flex-col items-center justify-center p-8 bg-card rounded-2xl border border-border/50 hover:border-primary/20 hover:shadow-elegant transition-all duration-500 animate-fade-in backdrop-blur-sm" style={{
             animationDelay: `${index * 0.1}s`
