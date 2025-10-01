@@ -61,7 +61,7 @@ const Inicio = () => {
       {/* Intro Section */}
       <section className="py-20 bg-background">
         <div className="content-container">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl leading-relaxed text-muted-foreground mb-8">
               Imagine un equipo donde cada persona encuentra <span className="text-primary font-semibold">propósito en su trabajo</span>, 
               donde el crecimiento individual impulsa el éxito colectivo y donde los desafíos del cambio se transforman en oportunidades.
@@ -81,7 +81,7 @@ const Inicio = () => {
       {/* Needs Section */}
       <section className="py-20 bg-background">
         <div className="content-container">
-          <div className="mb-16">
+          <div className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ayudamos a profesionales, líderes y empresas que necesitan
             </h2>
@@ -109,11 +109,11 @@ const Inicio = () => {
       {/* Services Section */}
       <section className="py-20 bg-muted/30">
         <div className="content-container">
-          <div className="mb-16">
+          <div className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Nuestros Servicios
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Soluciones integrales para transformar tu organización y desarrollar tu talento
             </p>
           </div>

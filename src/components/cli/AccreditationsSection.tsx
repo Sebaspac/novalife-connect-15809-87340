@@ -11,7 +11,7 @@ const AccreditationsSection = () => {
   return (
     <section className="py-20 bg-background">
       <div className="content-container">
-        <div className="mb-16">
+        <div className="mb-16 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Acreditados y avalados por:
           </h2>

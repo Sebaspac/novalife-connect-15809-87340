@@ -122,7 +122,7 @@ const Servicios = () => {
       {/* Intro */}
       <section className="py-16 bg-background">
         <div className="content-container">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <p className="text-xl leading-relaxed text-muted-foreground">
               Ofrecemos un ecosistema completo de servicios para acompañar tu crecimiento, 
               ya seas un profesional en desarrollo o una empresa en transformación. 
@@ -135,11 +135,11 @@ const Servicios = () => {
       {/* Servicios para Profesionales */}
       <section className="py-20 bg-muted/30">
         <div className="content-container">
-          <div className="mb-16">
+          <div className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Para Profesionales
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Servicios diseñados para impulsar tu desarrollo profesional y alcanzar tus metas de carrera
             </p>
           </div>
@@ -161,11 +161,11 @@ const Servicios = () => {
       {/* Servicios para Empresas */}
       <section className="py-20 bg-background">
         <div className="content-container">
-          <div className="mb-16">
+          <div className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Para Empresas
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Soluciones integrales para transformar tu organización y desarrollar tu talento humano
             </p>
           </div>
@@ -187,7 +187,7 @@ const Servicios = () => {
       {/* Crosslinks Section */}
       <section className="py-16 bg-muted/30">
         <div className="content-container">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">
               ¿Quieres saber más?
             </h3>

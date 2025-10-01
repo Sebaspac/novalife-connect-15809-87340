@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
   return <section className="py-24 lg:py-32 bg-background">
       <div className="content-container">
         {/* Section Title - Apple style */}
-        <div className="animate-fade-in mb-16 lg:mb-24">
+        <div className="animate-fade-in mb-16 lg:mb-24 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl lg:text-5xl font-semibold text-foreground tracking-tight">Esto dicen nuestros clientes</h2>
         </div>
 

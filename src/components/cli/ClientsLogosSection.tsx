@@ -27,13 +27,13 @@ const ClientsLogosSection = () => {
   return <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="content-container">
         {/* Minimal Header */}
-        <div className="mb-16 space-y-3 animate-fade-in">
+        <div className="mb-16 space-y-3 animate-fade-in text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10 mb-4">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">Confianza y Colaboración</span>
           </div>
           
-          <p className="text-muted-foreground max-w-2xl">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Organizaciones que confían en nosotros para su transformación
           </p>
         </div>
