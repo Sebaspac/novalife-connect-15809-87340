@@ -122,7 +122,7 @@ const Servicios = () => {
       {/* Intro */}
       <section className="py-16 bg-background">
         <div className="content-container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl">
             <p className="text-xl leading-relaxed text-muted-foreground">
               Ofrecemos un ecosistema completo de servicios para acompañar tu crecimiento, 
               ya seas un profesional en desarrollo o una empresa en transformación. 
