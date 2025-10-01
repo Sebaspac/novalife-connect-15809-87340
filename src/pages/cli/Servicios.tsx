@@ -187,7 +187,7 @@ const Servicios = () => {
       {/* Crosslinks Section */}
       <section className="py-16 bg-muted/30">
         <div className="content-container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl">
             <h3 className="text-2xl font-bold mb-4">
               ¿Quieres saber más?
             </h3>
